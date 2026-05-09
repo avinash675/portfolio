@@ -1,0 +1,45 @@
+/* Tailwind */
+@import "tailwindcss";
+
+/* Root Variables */
+:root {
+  --color-brand-bg: #0f172a;
+  --color-brand-accent: #6366f1;
+  color-scheme: dark;
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+/* Base Body */
+body {
+  background-color: var(--color-brand-bg);
+  color: #cbd5e1; /* slate-300 */
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Selection */
+::selection {
+  background-color: rgba(99, 102, 241, 0.3);
+  color: white;
+}
+
+/* Scrollbar (optional premium feel) */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
